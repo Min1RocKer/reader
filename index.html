@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html ng-app="app">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
-		<meta name="format-detection" content="telephone=no">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-		<div id="root">
-		    <div id="content">
-		        <div id="top_nav" class="top_nav" style="display:none">
-		            <div class="icon-back"></div>
-		            <div class="nav-title">返回书架</div>
-		        </div>
-		        <div id="bottom_nav" class="bottom_nav" style="display:none">
-		            <div class="bottom_nav_i">
-		                <div class="icon_1"></div>
-		                <div class="nav_i_title">目录</div>
-		            </div>
-		            <div class="bottom_nav_i" id="bottom_nav_font">
-		                <div class="icon_2" id="icon_2"></div>
-		                <div class="nav_i_title">字体</div>
-		            </div>
-		            <div class="bottom_nav_i" id="bottom_nav_day">
-		                <div class="icon_3_active" id="icon_3"></div>
-		                <div class="nav_i_title changeBkcolor" id="day">白天</div>
-		            </div>
-		        </div>
-		        <div id="bottom_font" class="bottom_font" style="display:none">
-		            <div class="bottom_font_size">
-		                <div class="nav_i_title">字体大小</div>
-		                <div id="smaller_font">小</div>
-		                <div id="bigger_font">大</div>
-		            </div>
-		            <div class="bottom_font_color">
-		                <div class="nav_i_title">背景色</div>
-		                <div id="bk1" class="icon_i" style="background-color:#D3D3D3"></div>
-		                <div id="bk2" class="icon_i" style="background-color:#B0C4DE"></div>
-		                <div id="bk3" class="icon_i" style="background-color:#FFDAB9"></div>
-		                <div id="bk4" class="icon_i" style="background-color:#C0C0C0"></div>
-		                <div id="bk5" class="icon_i" style="background-color:#F5F5F5"></div>
-		            </div>
-		        </div>
-		        <!--不可见遮罩层-->
-		        <div class="m-artical-action" >
-		        	<div class="artical-action-mid" id="artical-action-mid"></div>
-		        </div>
-		        <div id="fiction-chapter-content" class="m-read-content">
-		        </div>
-		        <div class="fiction-button-bar">
-		            <ul class="u-tab">
-		                <li id="prev-button">上一章</li>
-		                <li id="next-button">下一章</li>
-		            </ul>
-		        </div>
-		    </div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"></head>
+<body>
+	<div id="root">
+		<div id="content">
+			<div id="top_nav" class="top_nav" style="display:none">
+				<div class="icon-back"></div>
+				<div class="nav-title">返回书架</div>
+			</div>
+			<div id="bottom_nav" class="bottom_nav" style="display:none">
+				<div class="bottom_nav_i">
+					<div class="icon_1"></div>
+					<div class="nav_i_title">目录</div>
+				</div>
+				<div class="bottom_nav_i" id="bottom_nav_font">
+					<div class="icon_2" id="icon_2"></div>
+					<div class="nav_i_title">字体</div>
+				</div>
+				<div class="bottom_nav_i" id="bottom_nav_day">
+					<div class="icon_3_active" id="icon_3"></div>
+					<div class="nav_i_title changeBkcolor" id="day">白天</div>
+				</div>
+			</div>
+			<div id="bottom_font" class="bottom_font" style="display:none">
+				<div class="bottom_font_size">
+					<div class="nav_i_title">字体大小</div>
+					<div id="smaller_font">小</div>
+					<div id="bigger_font">大</div>
+				</div>
+				<div class="bottom_font_color">
+					<div class="nav_i_title">背景色</div>
+					<div id="bk1" class="icon_i" style="background-color:#D3D3D3"></div>
+					<div id="bk2" class="icon_i" style="background-color:#B0C4DE"></div>
+					<div id="bk3" class="icon_i" style="background-color:#FFDAB9"></div>
+					<div id="bk4" class="icon_i" style="background-color:#C0C0C0"></div>
+					<div id="bk5" class="icon_i" style="background-color:#F5F5F5"></div>
+				</div>
+			</div>
+			<!--不可见遮罩层-->
+			<div class="m-artical-action" >
+				<div class="artical-action-mid" id="artical-action-mid"></div>
+			</div>
+			<div id="fiction-chapter-content" class="m-read-content"></div>
+			<div class="fiction-button-bar">
+				<ul class="u-tab">
+					<li id="prev-button">上一章</li>
+					<li id="next-button">下一章</li>
+				</ul>
+			</div>
 		</div>
-		<script src="lib/zepto.min.js"></script>
-		<script>
-			window.jQuery = $;
-		</script>
-		<script type="text/javascript" src="js/jquery.base64.js"></script>
-		<script type="text/javascript" src="js/jquery.jsonp.js"></script>
-		<script type="text/javascript" src="js/style.js" charset="utf-8"></script>
-	</body>
+	</div>
+	<script src="lib/zepto.min.js"></script>
+	<script>window.jQuery = $;</script>
+	<script type="text/javascript" src="js/jquery.base64.js"></script>
+	<script type="text/javascript" src="js/jquery.jsonp.js"></script>
+	<script type="text/javascript" src="js/style.js" charset="utf-8"></script>
+</body>
 </html>
